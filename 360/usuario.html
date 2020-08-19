@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css"  href="css/grid.css">
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/rowReorder.dataTables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/responsive.dataTables.min.css"/>
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/dataTables.rowReorder.min.js"></script>
+    <script type="text/javascript" src="js/dataTables.responsive.min.js"></script>
+    <script type="text/javascript" src="js/triggerDataTable.js"></script>
+    <script type="text/javascript" src="js/Chart.min.js"></script>
+    <script type="text/javascript" src="js/acordeon.js"></script>
+    <script type="text/javascript" src="js/botonArriba.js"></script>
+    <title>usuario</title>
+</head>  
+<body>
+  <span class="salirBtn">
+    <ul class="minimenu">
+      <div class="tooltip">
+        <li><a href="index.html"><img src="images/iconHome2.png"></a></li>
+        <span class="tooltipLeft">INICIO</span>
+      </div>
+      <div class="tooltip">
+        <li><a href="index.html"><img src="images/iconOnOff2.png"></a></li>
+        <span class="tooltipBottom">SALIR</span>
+      </div>
+      <div class="tooltip">
+        <li><a href="javascript:window.print()"><img src="images/iconPrint.png"></a></li>
+        <span class="tooltipBottom">IMPRIMIR</span>
+      </div>
+    </ul>
+  </span>
+  <div class="bannerHead">
+    <div id="enCabeza"><img src="./images/SAPCrojoH.png" alt="LogoSapC"/>
+    </div>  
+    <img src="images/LogoPemexColorH.png" height="75%">
+  </div>
+  <span class="ir-arriba"><img src="images/icoBtnUp.png" ></span>
+  <div class="mainFrame">
+    <div class="bebox">
+      <div class="aydi">
+        <div><img src="./images/People01.jpg" class="photoID" alt="FotoPerfilusuario"/></div>
+        <div>
+          <p class="textoremarcado">Juan Ramirez Izquierdo</p>
+          <p class="textodiscreto">378901</p>
+          <p class="textodiscreto">Ing. Petrolero</p>
+        </div>
+      </div>
+      <hr>
+            <a href="#" class="accordion-titulo " >Datos del Centro de Trabajo<span class="toggle-icon"></span></a>
+            <div class="accordion-content">
+              <p class="textoremarcado">Datos del Centro de Trabajo</p>
+              <p class="textodiscreto">Disciplina: Diseño y Construcción de Infraestructura</p>
+              <p class="textodiscreto">Especialidad: Diseño de Infraestructura</p>
+              <p class="textodiscreto">Cargo: XXXXXXXXXXXX XXXXXXXXXX XXXXXXX</p>
+              <p class="textodiscreto">Fecha de alta en cargo:</p>
+              <p class="textodiscreto">Teléfono: 881-987-24-13</p>
+              <p class="textodiscreto">Domicio: Calle Num. Colonia de tal. Villahermosa, Tab.</p>
+              <p class="textodiscreto">Extención: 881-987-24</p>
+              <p class="textodiscreto">Correo: juan.delasCotonas@pemex.com</p>
+            </div>
+            <hr>
+            <a href="#" class="accordion-titulo " >Datos Personales<span class="toggle-icon"></span></a>
+            <div class="accordion-content">
+              <p class="textoremarcado">Datos Personales</p>
+              <p class="textodiscreto">Edad: 67</p>
+              <p class="textodiscreto">Linea de Negocio: SDCa</p>
+              <p class="textodiscreto">Subdirección: Técnica de exploración y Producción</p>
+              <p class="textodiscreto">Región: Sur</p>
+              <p class="textodiscreto">Activo: Gerencia de Innovación e Inteligencia Tecnológica</p>
+              <p class="textodiscreto">Estado: Finalizado</p>
+              <p class="textodiscreto">Tipo de empleado: Confianza</p>
+              <p class="textodiscreto">Antiguedad: 18</p>
+              <p class="textodiscreto">Dirección: Exploración y Producción</p>
+            </div>
+      <hr>
+    </div>
+
+    <div class="bebox">
+      <canvas id="myChart" width="500px" height="300px"></canvas>
+              <script>
+              var ctx = document.getElementById('myChart').getContext('2d');
+              var myChart = new Chart(ctx, {
+              type: 'bar',
+              data: {
+                  labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                  datasets: [{
+                      label: '# of Votes',
+                      data: [12, 19, 3, 5, 2, 3],
+                      backgroundColor: [
+                          'rgba(255, 99, 132, 1)',
+                          'rgba(54, 162, 235, 0.2)',
+                          'rgba(255, 206, 86, 1)',
+                          'rgba(153, 102, 255, 1)',
+                          'rgba(153, 102, 255, 0.2)',
+                          'rgba(255, 159, 64, 1)'
+                      ],
+                      borderColor: [
+                          'rgba(255, 99, 132, 1)',
+                          'rgba(54, 162, 235, 1)',
+                          'rgba(255, 206, 86, 1)',
+                          'rgba(75, 192, 192, 1)',
+                          'rgba(153, 102, 255, 1)',
+                          'rgba(255, 159, 64, 1)'
+                      ],
+                      borderWidth: 1
+                  }]
+              },
+              options: {
+                  scales: {
+                      yAxes: [{
+                          ticks: {
+                              beginAtZero: true
+                          }
+                      }]
+                  }
+              }
+              });
+              </script>
+    </div>
+    <div class="bebox"> 
+          tres
+    </div>
+    <div class="bebox">
+      <canvas id="marksChart" width="500" height="300"></canvas>
+        <script>
+            var marksCanvas = document.getElementById("marksChart");
+            var marksData = {
+              labels: ["c195", "c180", "c24", "c431", "c333", "c211", "c61", "c4", "c190", "c207", "c78", "c110", "c220", "c14", "c115", "c167", "c177", "c180", "c193", "c220", "c211", "c202"],
+              datasets: [{
+                label: "NDR",
+                backgroundColor: "rgba(200,0,0,0.2)",
+                data: [65, 75, 70, 80, 60, 80, 68, 78, 88, 80, 40, 35, 20, 90, 92, 88, 80, 40, 95, 70, 90, 92]
+              }, {
+                label: "NDE",
+                backgroundColor: "rgba(86, 37, 42, 0.2)",
+                data: [54, 65, 60, 70, 70, 75, 54, 63, 67, 75, 80, 54, 63, 67, 75, 67, 75, 80, 54, 63, 67, 75]
+              }]
+            };
+
+            var radarChart = new Chart(marksCanvas, {
+              type: 'radar',
+              data: marksData
+            });
+        </script>
+    </div>
+    <div class="bebox">cinco</div>
+    <div class="bebox">seis</div>
+    <div class="bebox">siete</div>
+    <div class="bebox">ocho</div>
+  </div>
+  <style>
+    body {
+      /*background: linear-gradient(-75deg, #cf202f, #008a55, #d2be98, #b28d5c);*/
+      background: linear-gradient(-75deg,  #008a55, #d2be98, #b28d5c);
+      background-size: 400% 400%;
+      animation: gradiente 60s ease infinite;
+    }
+  
+    @keyframes gradiente {
+      0% {
+      background-position: 0% 50%;
+      }
+      50% {
+      background-position: 100% 50%;
+      }
+      100% {
+      background-position: 0% 50%;
+      }
+    }
+  </style>
+</body>
+</html>
+

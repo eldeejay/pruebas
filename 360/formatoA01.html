@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/root.css">
+    <meta name="viewport" content="initial-scale=1, user-scalable=no">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/botonArriba.js"></script>
+    <title>Evaluación 360</title>
+</head>
+<body>
+  <span class="salirBtn">
+    <ul class="minimenu">
+      <li><img src="images/icoHome.png"><a href="index.html"> inicio</a> | </li>
+      <li><img src="images/icOnOff.png"><a href="index.html"> salir</a></li>
+  </ul>
+  </span>
+  <span class="ir-arriba icon-arrow-up2"><img src="images/icoBtnUp.png" ></span>
+    <div class="bannerHead">
+        <div id="enCabeza"><p><b>Evaluación 360</b><br><font size="3">Formato A</font></p>
+        </div>
+        <img src="images/LogoPemexColorH.png" height="75%">
+      </div>
+  <div class="container">
+  <div class="form">
+    <h4 class="full">Sección de captura Ficha Curricular</h4>
+    <form>
+<!-- +++++++++++++++++++++++++ terminan reactivos +++++++++++++++++++++++++++  -->
+            <div class="form-control">
+                Nombre completo<br>
+                <input type="text" name="nombreUsuarioPemex" id="nombreUsuarioPemex" placeholder="Nombre(s), Apellido paterno, Apellido materno">
+            </div>
+            <div class="form-control">
+                Edad<br>
+                <input type="number" name="A001edadUsuario" id="A001edadUsuario" placeholder="años" required>
+            </div>
+            <div class="form-control">
+                Contraseña<br>
+                <input type="number" name="contraseñaUsuarioPemex" id="contraseñaUsuarioPemex" placeholder="***********" required>
+            </div>
+            <div class="form-control">
+                Disciplina
+                <select class="form-control">
+                    <option value="" selected disabled hidden>Seleccione una Opción</option>
+                    <option value="1">1.- Geofísica</option>
+                    <option value="2">2.-Geología</option>
+                    <option value="3">3.- Petrofísica</option>
+                    <option value="4">4.- Geociencias Aplicadas</option>
+                    <option value="5">5.- Intervenciones a Pozos</option>
+                    <option value="6">6.- Yacimientos</option>
+                    <option value="7">7.- Producción</option>
+                    <option value="8">8.- Instalaciones de Producción</option>
+                    <option value="9">9.- Diseño y Construcción de la Infraestructura</option>
+                    <option value="10">10.- Operación de Pozos e Instalaciones</option>
+                    <option value="11">11.- Servicios Logisticos</option>
+                    <option value="12">12.- Mantenimiento y Confiabilidad</option>    
+                    <option value="13">13.- Seguridad, Salud y Protección Ambiental</option>
+                    <option value="14">14.- Distribución y Comercialización de hidrocarburos</option>
+                    <option value="15">15.- Estrategias de Negocio</option>
+                    <option value="16">16.- Procesos de Negocio</option>
+                  </select>
+            </div>
+            <div class="form-control">
+                Especialidad
+                <select class="form-control">
+                  <option value="" selected disabled hidden>Seleccione una Opción</option>
+                  <option value="1">056 Acondicionamiento y tratamiento de fluidos</option>
+                  <option value="2">083 Administración de activos</option>
+                  <option value="3">084 Administración del talento</option>
+                  <option value="4">074 Administración integral</option>
+                  <option value="5">026 Administración integral de yacimientos</option>
+                  <option value="6">061 Administración portuaria</option>
+                  <option value="7">092 Analista de disciplina de diseño de instalaciones de superficie</option>
+                  <option value="8">093 Analista de disciplina de diseño de perforación, terminación y reparación de pozos</option>
+                  <option value="9">094 Analista de disciplina de geofísica en diseño de explotación</option>
+                  <option value="10">123 Analista de disciplina de geofísica en proyectos de exploración</option>
+                  <option value="11">095 Analista de disciplina de geología en diseño de explotación</option>
+                  <option value="12">124 Analista de disciplina de geología en operación geológica</option>    
+                  <option value="13">096 Analista de disciplina de operación de instalaciones de superficie</option>
+                  <option value="14">097 Analista de disciplina de producción</option>
+                  <option value="15">098 Analista de disciplina de yacimientos</option>
+                  <option value="16">040 Aseguramiento de flujo en pozos</option>
+                  <option value="17">050 Aseguramiento de flujo en tuberías e instalaciones</option>
+                  <option value="18">099 Asistente generalista PT-Diseño de Explotación</option>
+                  <option value="19">001 Atributos e inversión sísmica</option>
+                  <option value="20">044 Automatización para el control de procesos</option>
+                  <option value="21">038 Bombeo electrocentrífugo</option>
+                  <option value="22">090 Calidad</option>
+                  <option value="23">100 Caracterización de yacimiento</option>
+                  <option value="24">027 Caracterización dinámica de yacimientos</option>
+                  <option value="25">011 Caracterización estática de yacimientos</option>
+                  <option value="26">020 Cementaciones</option>
+                  <option value="27">101 Comercialización</option>
+                  <option value="28">077 Comercialización de hidrocarburos</option>
+                  <option value="29">053 Construcción y optimización de infraestructura</option>
+                  <option value="30">043 Control de agua y gas</option>
+                  <option value="31">051 Control de depósitos orgánicos e inorgánicos</option>
+                  <option value="32">021 Control de pozos</option>
+                  <option value="33">079 Desarrollo de negocios</option>
+                  <option value="34">013 Diseño de  proyectos exploratorios</option>
+                  <option value="35">052 Diseño de infraestructura</option>
+                  <option value="36">102 Diseño de instalaciones de explotación</option>
+                  <option value="37">045 Diseño de instalaciones de producción</option>
+                  <option value="38">015 Diseño de intervenciones a pozos</option>
+                  <option value="39">103 Diseño de perforación de pozos de explotación</option>
+                  <option value="40">017 Diseño de reparación de pozos</option>
+                  <option value="41">016 Diseño de terminación de pozos</option>
+                  <option value="42">104 Diseño de terminación de pozos de explotación</option>
+                  <option value="43">024 Disparos</option>
+                  <option value="44">041 Estimulaciones matriciales</option>
+                  <option value="45">006 Estratigrafía y sedimentología</option>
+                  <option value="46">010 Evaluación de prospectos</option>
+                  <option value="47">022 Fluidos de control</option>
+                  <option value="48">042 Fracturamiento de pozos</option>
+                  <option value="49">105 Geología de Explotación</option>
+                  <option value="50">106 Geología de explotación de yacimientos</option>
+                  <option value="51">007 Geología estructural</option>
+                  <option value="52">012 Geomecánica</option>
+                  <option value="53">019 Geomecánica de pozo</option>
+                  <option value="54">014 Geomodelado de yacimientos</option>
+                  <option value="55">085 Gestión de activos intangibles técnicos y tecnológicos</option>
+                  <option value="56">087 Gestión de tecnología</option>
+                  <option value="57">081 Gestión y administración de contratos</option>
+                  <option value="58">080 Gestión y control de los procesos</option>
+                  <option value="59">107 Gestión y evaluación de proyectos (Activo)</option>
+                  <option value="60">108 Ingeniería de mantenimiento</option>
+                  <option value="61">036 Ingeniería de producción</option>
+                  <option value="62">109 Ingeniería de producción de pozos</option>
+                  <option value="63">025 Ingeniería de yacimientos</option>
+                  <option value="64"> Fluidos de control</option>
+                  <option value="65">110 Integridad y confiabilidad de ductos</option>
+                  <option value="66">068 Integridad y confiabilidad de ductos e instalaciones</option>
+                  <option value="67">111 Integridad y confiabilidad de instalaciones</option>
+                  <option value="68">055 Interconexiones, pruebas y arranque</option>
+                  <option value="69">002 Interpretación sísmica</option>
+                  <option value="70">031 Inyección de agua</option>
+                  <option value="71">032 Inyección de gases (miscible e inmiscible)</option>
+                  <option value="72">028 Laboratorio de yacimientos área fluidos</option>
+                  <option value="73">029 Laboratorio de yacimientos área rocas</option>
+                  <option value="74">046 Líneas de recolección, risers e interconexiones</option>
+                  <option value="75">060 Logística de materiales y equipos</option>
+                  <option value="76">063 Mantenimiento a equipo de bombeo</option>
+                  <option value="77">064 Mantenimiento a equipo de compresión</option>
+                  <option value="78">062 Mantenimiento a equipos dinámico</option>
+                  <option value="79">066 Mantenimiento a equipos estático</option>
+                  <option value="80">067 Mantenimiento a sistemas de control de seguridad</option>
+                  <option value="81">069 Mantenimiento a sistemas eléctricos</option>
+                  <option value="82">065 Mantenimiento a turbomaquinaria</option>
+                  <option value="83">112 Mantenimiento eléctrico</option>
+                  <option value="84">113 Medición de fluidos</option>
+                  <option value="85">076 Medición de hidrocarburos</option>
+                  <option value="86">003 Métodos geofísicos no sísmicos</option>
+                  <option value="87">008 Modelado de sistemas petroleros</option>
+                  <option value="88">082 Negociación</option>
+                  <option value="89">057 Operación de instalaciones de producción de aceite</option>
+                  <option value="90">058 Operación de instalaciones de producción de gas</option>
+                  <option value="91">005 Operación Geofísica</option>
+                  <option value="92">059 Operación de pozos y sistemas artificiales de producción</option>
+                  <option value="93">078 Planeación Estratégica</option>
+                  <option value="94">004 Procesamiento sísmico</option>
+                  <option value="95">009 Petrofísica de Yacimientos</option>
+                  <option value="96">071 Protección Ambiental</option>
+                  <option value="97">075 Programación y Distribución de Hidrocarburos</option>
+                  <option value="98">088 Programación, evaluación y control</option>
+                  <option value="100">023 Perforación Vertical y direccional</option>
+                  <option value="101">039 productividad de pozos</option>
+                  <option value="102">033 Recuperación mejorada vía procesos térmicos</option>
+                  <option value="103">034 Recuperación mejorada vía procesos químicos</option>
+                  <option value="104">035 Recuperación mejorada vía procesos emergentes</option>
+                  <option value="105">089 Regulación y normatividad</option>
+                  <option value="106">030 Simulación de Yacimientos</option>
+                  <option value="107">037 Sistemas artificiales</option>
+                  <option value="108">048 Sistemas submarinos de producción</option>
+                  <option value="109">049 Sistemas de control submarino</option>
+                  <option value="110">070 Salud en el trabajo</option>
+                  <option value="111">072 Sistemas de gestión SSPA</option>
+                  <option value="112">073 Seguridad de los procesos</option>
+                  <option value="113">086 Sistemas de información técnica</option>
+                  <option value="114">047 Transporte y distribución de hidrocarburos</option>
+                  <option value="115">054 Transporte e instalación de infraestructura marina</option>
+                </select>
+            </div>
+            <div class="form-control">
+                Experiencia en la especialidad 
+                <input type="number" name="A001experienciaEspecialidad" id="A001experienciaEspecialidad" placeholder="(años)">
+              </div>
+              <div class="form-control">
+                Antigüedad Pemex
+                <input type="number" name="A001antigüedad" id="A001antigüedad" placeholder="(años)">
+              </div>
+ <!-- +++++++++++++++++++++++++ terminan reactivos +++++++++++++++++++++++++++  -->
+      <!--
+      <div class="form-control">
+        <button class="btn  form-control">guardar</button></a>
+      </div>
+      -->
+      <div class="form-control">
+        
+      </div>
+      <div class="form-control">
+        <a href="javascript:history.back(-1);" class="bton">anterior</a>
+      </div>
+      <div class="form-control">
+        <a href="./formatoA02.html" class="bton">siguiente</a>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>

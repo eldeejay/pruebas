@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/root.css">
+  <meta name="viewport" content="initial-scale=1, user-scalable=no">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/botonArriba.js"></script>
+  <title>Evaluación 360</title>
+</head>
+<body>
+  <span class="salirBtn">
+    <ul class="minimenu">
+      <li><img src="images/icoHome.png"><a href="index.html"> inicio</a> | </li>
+      <li><img src="images/icOnOff.png"><a href="index.html"> salir</a></li>
+  </ul>
+  </span>
+  <span class="ir-arriba icon-arrow-up2"><img src="images/icoBtnUp.png" ></span>
+    <div class="bannerHead">
+        <div id="enCabeza"><p><b>Evaluación 360</b><br><font size="3">Formato A</font></p>
+        </div>
+        <img src="images/LogoPemexColorH.png" height="75%">
+      </div>
+  <div class="container">
+  <div class="form">
+    <h4 class="full">ANTECEDENTES LABORALES</h4>
+    <h6 class="full">primer Puesto Anterior</h6>
+    <form>
+<!-- +++++++++++++++++++++++++ terminan reactivos +++++++++++++++++++++++++++  -->
+<div class="form-control">
+    Nombre del Puesto
+    <input type="text" name="primerNombrePuesto" id="primerNombrePuesto" >
+  </div>
+<div class="form-control">
+    Periodo
+    <input type="number" name="primerPeriodo" placeholder="(años)">
+  </div>
+  <div class="form-control">
+    Fecha de inicio
+    <input type="date" id="primerFechainicio" name="primerFechainicio" min="1980-01-01" max="now" placeholder="dd-mm-aa">
+  </div>
+  <div class="form-control">
+    Fecha de termino
+    <input type="date" id="primerFechaTermino" name="primerFechaTermino" min="1980-01-01" max="now">
+  </div>
+
+  <div class="form-control">
+    Funciones Principales
+    <textarea name="primerFuincionPrincipal" id="primerFuincionPrincipal" rows="5" placeholder="(Dar enter para poder cambiar de renglón)"></textarea>
+  </div>
+  <div class="form-control">
+    Logros
+    <textarea name="primerLogros" id="primerLogros" rows="5" placeholder="(Dar enter para poder cambiar de renglón)"></textarea>
+  </div>
+
+ <!-- +++++++++++++++++++++++++ terminan reactivos +++++++++++++++++++++++++++  -->
+    
+      <!--
+      <div class="form-control">
+        <button class="btn  form-control">guardar</button></a>
+      </div>
+      -->
+        
+      <div class="form-control">
+        <a href="javascript:history.back(-1);" class="bton">anterior</a>
+      </div>
+      <div class="form-control">
+        <a href="./formatoA05.html" class="bton">siguiente</a>
+      </div>
+      
+    </form>
+    
+  </div>
+
+</div>
+
+</body>
+</html>

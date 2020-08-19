@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip .tooltipLeft {
+  visibility: hidden;
+  width: auto;
+  background-color: #b28d5c;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 6px 1rem;
+  position: absolute;
+  z-index: 99;
+  top: -6px;
+  right: 115%;
+}
+.tooltip .tooltipBottom {
+  visibility: hidden;
+  width: auto;
+  background-color: #b28d5c;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 6px 1rem;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+.tooltip .tooltipLeft::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent #b28d5c;
+}
+.tooltip .tooltipBottom::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 85%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #b28d5c transparent;
+}
+.tooltip:hover .tooltipLeft {
+  visibility: visible;
+}
+.tooltip:hover .tooltipBottom {
+  visibility: visible;
+}
+</style>
+<body style="text-align:center;">
+<div class="tooltip">Probando toolTip izquierdo
+    <span class="tooltipLeft">INICIO</span>
+</div>
+<br><br><br>
+<div class="tooltip">Probando toolTip abajo
+    <span class="tooltipBottom">SALIR</span>
+</div>
+</body>
+</html>

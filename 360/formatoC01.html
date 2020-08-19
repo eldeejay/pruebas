@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/root.css">
+    <meta name="viewport" content="initial-scale=1, user-scalable=no">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/botonArriba.js"></script>
+    <title>Evaluación 360</title>
+</head>
+
+<body>
+    <span class="salirBtn">
+        <ul class="minimenu">
+          <li><img src="images/icoHome.png"><a href="index.html"> inicio</a> | </li>
+          <li><img src="images/icOnOff.png"><a href="index.html"> salir</a></li>
+      </ul>
+      </span>
+    <span class="ir-arriba icon-arrow-up2"><img src="images/icoBtnUp.png" ></span>
+    <div class="bannerHead" id="bannerHead">
+        <div id="enCabeza">
+            <p><b>Evaluación 360</b><br><font size="3">Formato C</font>
+            </p>
+        </div>
+        <img src="images/LogoPemexColorH.png" height="75%">
+    </div>
+    <div class="container">
+        <div class="form">
+            <h4 class="full">Validación de la Medición de Competencias <br/>del Personal Seleccionado en las <br/>Especialidades de PEP</h4>
+            <h5>2.- ANÁLISIS CURRICULAR</h5>
+            <form>
+                
+                <!-- +++++++++++++++++++++++++ terminan reactivos +++++++++++++++++++++++++++  -->
+                <div class="form-control">
+                    Número de proyectos relevantes en los que has participado<br>
+                    <input class="buttonRadio" type="radio" name="ProyectosParticipo"
+                        id="ProyectosParticipo01">&nbsp&nbsp<label for="ProyectosParticipo01">De 1 a 5</label><br>
+                    <input class="buttonRadio" type="radio" name="ProyectosParticipo"
+                        id="ProyectosParticipo02">&nbsp&nbsp<label for="ProyectosParticipo02">De 6 a 10</label><br>
+                    <input class="buttonRadio" type="radio" name="ProyectosParticipo"
+                        id="ProyectosParticipo03">&nbsp&nbsp<label for="ProyectosParticipo03">De 11 a 15</label><br>
+                    <input class="buttonRadio" type="radio" name="ProyectosParticipo"
+                        id="ProyectosParticipo04">&nbsp&nbsp<label for="ProyectosParticipo04">Más de 15</label><br>
+                </div>
+
+                <div class="form-control">
+                    De los proyectos en los que participaste...<br>Menciona el nombre de los tres principales <br><font size="6">(Dar enter para poder cambiar de renglón)</font><br>
+                    <textarea class="btnSelec" name="3poryectParticipacion" id="3poryectParticipacion"
+                        rows="3"></textarea>
+                </div>
+
+                <div class="form-control">
+                    Menciona y explica los roles preponderantes que desempeñaste<br>
+                    <input class="buttonRadio" type="radio" name="RolClass" id="RolClass01">&nbsp&nbsp<label
+                        for="RolClass01">Rol(es) de influencia media</label><br>
+                    <input class="buttonRadio" type="radio" name="RolClass" id="RolClass02">&nbsp&nbsp<label
+                        for="RolClass02">Rol(es) de influencia alta</label><br>
+                    <input class="buttonRadio" type="radio" name="RolClass" id="RolClass03">&nbsp&nbsp<label
+                        for="RolClass03">Rol(es) de influencia muy alta</label><br>
+                </div>
+
+                <div class="form-control">
+                    Enumera y explica por qué.<br> ¿Cuáles consideras que fueron tus mayores aciertos?<br>
+                    <input class="buttonRadio" type="radio" name="AciertosClass" id="AciertosClass01">&nbsp&nbsp<label
+                        for="AciertosClass01">Acierto(s) con relevancia media</label><br>
+                    <input class="buttonRadio" type="radio" name="AciertosClass" id="AciertosClass02">&nbsp&nbsp<label
+                        for="AciertosClass02">Acierto(s) con relevancia alta</label><br>
+                    <input class="buttonRadio" type="radio" name="AciertosClass" id="AciertosClass03">&nbsp&nbsp<label
+                        for="AciertosClass03">Acierto(s) con relevancia muy alta</label><br>
+                </div>
+
+                <div class="form-control">
+                    Enumera y explica por qué.<br> ¿Cuáles consideras que fueron tus mayores desaciertos?<br>
+                    <input class="buttonRadio" type="radio" name="DesAciertosClass"
+                        id="DesAciertosClass01">&nbsp&nbsp<label for="DesAciertosClass01">Desacierto(s) con relevancia
+                        media</label><br>
+                    <input class="buttonRadio" type="radio" name="DesAciertosClass"
+                        id="DesAciertosClass02">&nbsp&nbsp<label for="DesAciertosClass02">Desacierto(s) con relevancia
+                        baja</label><br>
+                    <input class="buttonRadio" type="radio" name="DesAciertosClass"
+                        id="DesAciertosClass03">&nbsp&nbsp<label for="DesAciertosClass03">Desacierto(s) con relevancia
+                        muy baja</label><br>
+                </div>
+
+                <div class="form-control">
+                    Describe.<br> ¿Qué aprendiste de ellos?<br>
+                    <input class="buttonRadio" type="radio" name="aprendizajesClass"
+                        id="aprendizajesClass01">&nbsp&nbsp<label for="aprendizajesClass01">Aprendizaje(s) con
+                        relevancia media</label><br>
+                    <input class="buttonRadio" type="radio" name="aprendizajesClass"
+                        id="aprendizajesClass02">&nbsp&nbsp<label for="aprendizajesClass02">Aprendizaje(s) con
+                        relevancia alta</label><br>
+                    <input class="buttonRadio" type="radio" name="aprendizajesClass"
+                        id="aprendizajesClass03">&nbsp&nbsp<label for="aprendizajesClass03">Aprendizaje(s) con
+                        relevancia muy alta</label><br>
+                </div>
+
+                <div class="form-control">
+                    Enumera y explica.<br> ¿Cuáles fueron los resultados más importantes que obtuviste?<br>
+                    <input class="buttonRadio" type="radio" name="resultadosClass"
+                        id="resultadosClass01">&nbsp&nbsp<label for="resultadosClass01">Resultado(s) con impacto
+                        medio</label><br>
+                    <input class="buttonRadio" type="radio" name="resultadosClass"
+                        id="resultadosClass02">&nbsp&nbsp<label for="resultadosClass02">Resultado(s) con impacto
+                        alto</label><br>
+                    <input class="buttonRadio" type="radio" name="resultadosClass"
+                        id="resultadosClass03">&nbsp&nbsp<label for="resultadosClass03">Resultado(s) con impacto muy
+                        alto</label><br>
+                </div>
+
+                <div class="form-control">
+                    En caso de que fueras seleccionado como el Líder de esta Disciplina. <br>Describe, ¿Cuál sería tu visión
+                    para ella?<br>
+                    <input class="buttonRadio" type="checkbox" name="seleccionadoClass"
+                        id="seleccionadoClass01">&nbsp&nbsp<label for="seleccionadoClass01">Claridad</label><br>
+                    <input class="buttonRadio" type="checkbox" name="seleccionadoClass"
+                        id="seleccionadoClass02">&nbsp&nbsp<label for="seleccionadoClass02">Factibilidad</label><br>
+                    <input class="buttonRadio" type="checkbox" name="seleccionadoClass"
+                        id="seleccionadoClass03">&nbsp&nbsp<label
+                        for="seleccionadoClass03">Inspiracionalidad</label><br>
+                    <input class="buttonRadio" type="checkbox" name="seleccionadoClass"
+                        id="seleccionadoClass04">&nbsp&nbsp<label for="seleccionadoClass04">Posible impacto para el
+                        negocio</label><br>
+                </div>
+
+                <div class="form-control">
+                    Nivel de Dominio Real Obtenido<br>
+                    <input class="buttonRadio" type="radio" name="NDRClass" id="NDRClass01">&nbsp&nbsp<label
+                        for="NDRClass01">2 Básico</label><br>
+                    <input class="buttonRadio" type="radio" name="NDRClass" id="NDRClass02">&nbsp&nbsp<label
+                        for="NDRClass02">3 Intermedio</label><br>
+                    <input class="buttonRadio" type="radio" name="NDRClass" id="NDRClass03">&nbsp&nbsp<label
+                        for="NDRClass03">4 Avanzado</label><br>
+                    <input class="buttonRadio" type="radio" name="NDRClass" id="NDRClass04">&nbsp&nbsp<label
+                        for="NDRClass04">5 Especializado</label><br>
+                </div>
+
+                <!-- +++++++++++++++++++++++++ terminan reactivos +++++++++++++++++++++++++++  -->
+                <div></div>
+                <div class="form-control">
+                    <a href="javascript:history.back(-1);" class="bton">anterior</a>
+                </div>
+                <div class="form-control">
+                    <a href="./index.html" class="bton">siguiente</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

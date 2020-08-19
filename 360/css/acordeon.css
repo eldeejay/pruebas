@@ -1,0 +1,39 @@
+/* ++++++++ acordeones +++++++++++++++++++++*/
+
+.accordion-titulo {
+	position: relative;
+	display: block;
+	padding: 6px;
+	background: #b28d5c;
+	color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.accordion-titulo.open {
+	background: #d2be98;
+	color: #000;
+}
+
+.accordion-titulo:hover {
+    background: #56252a;
+    color: #fff;
+}
+
+.accordion-titulo span.toggle-icon:before {
+	content:"+";
+}
+
+.accordion-titulo.open span.toggle-icon:before {
+	content:"-";
+}
+
+.accordion-titulo span.toggle-icon {
+	position: absolute;
+	right: 10px;
+}
+
+.accordion-content {
+	display: none;
+	padding: 10px;
+	overflow: auto;
+}

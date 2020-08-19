@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/root.css">
+    <meta name="viewport" content="initial-scale=1, user-scalable=no">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/botonArriba.js"></script>
+    <title>Evaluación 360</title>
+</head>
+<body>
+  <span class="salirBtn">
+    <ul class="minimenu">
+      <li><img src="images/iconHome2.png"><a href="index.html"></a>&nbsp;&nbsp;</li>
+      <li><img src="images/iconOnOff2.png"><a href="index.html"> </a></li>
+  </ul>
+  </span>
+  
+    <div class="bannerHead">
+        <div id="enCabeza"><p><b>Evaluación 360</b><br><font size="3">Formato B</font></p>
+        </div>
+        <img src="images/LogoPemexColorH.png" height="75%">
+      </div>
+  <div class="container">
+  <div class="form">
+    <form action="/B00.php" method="post">
+      <div class="form-control">
+        Ingresa tu ficha de Pemex<br>
+        <input type="number" name="fichaUsuarioPemex" id="fichaUsuarioPemex" required placeholder="123456">
+      </div>
+      <div class="form-control">
+        Ingresa la Ficha del personal a evaluar<br>
+        <input type="number" name="fichaUsuarioAEvaluar" id="fichaUsuarioAEvaluar" placeholder="123456" required>
+      </div>
+      <div class="form-control">
+        Contraseña<br>
+        <input type="number" name="contraseñaUsuarioPemex" id="contraseñaUsuarioPemex" placeholder="*******" required>
+      </div>
+
+      <!--
+      <div class="form-control">   
+        <button class="btn  form-control">guardar</button></a>
+      </div>
+      -->
+        <div></div>
+      <div class="form-control">
+        <a href="javascript:history.back(-1);" class="bton">anterior</a>
+      </div>
+      <div class="form-control">
+        <!--<a href="./formatoB01.html" class="bton">siguiente</a>-->
+        <input type="submit" class="bton" value="siguiente" />
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>

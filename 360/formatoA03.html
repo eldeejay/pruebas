@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/root.css">
+  <meta name="viewport" content="initial-scale=1, user-scalable=no">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/botonArriba.js"></script>
+  <title>Evaluación 360</title>
+</head>
+<body>
+  <span class="salirBtn">
+    <ul class="minimenu">
+      <li><img src="images/icoHome.png"><a href="index.html"> inicio</a> | </li>
+      <li><img src="images/icOnOff.png"><a href="index.html"> salir</a></li>
+  </ul>
+  </span>
+  <span class="ir-arriba icon-arrow-up2"><img src="images/icoBtnUp.png" ></span>
+    <div class="bannerHead">
+        <div id="enCabeza"><p><b>Evaluación 360</b><br><font size="3">Formato A</font></p>
+        </div>
+        <img src="images/LogoPemexColorH.png" height="75%">
+      </div>
+  <div class="container">
+  <div class="form">
+    <h4 class="full">trabajo actual</h4>
+    <form>
+<!-- +++++++++++++++++++++++++ terminan reactivos +++++++++++++++++++++++++++  -->
+
+<div class="form-control">
+    Periodo
+    <input type="number" name="periodoActual" id="periodoActual" placeholder="(años)">
+  </div>
+  <div class="form-control">
+    Fecha de inicio<br>
+    <input type="date" id="fechaTrabajoActual" name="fechaTrabajoActual" placeholder=""
+     min="1980-01-01" max="now">
+  </div>
+  <div class="form-control">
+    Nombre del puesto
+    <input type="text" name="puestoActual" id="puestoActual" placeholder="Puesto Actual">
+  </div>
+  <div class="form-control">
+    Regimen contractual<br>
+    <input class="buttonRadio"  type="radio" name="RegimenContractual" id="RegimenContractual01" >&nbsp&nbsp<label for="RegimenContractual01">Planta</label><br>
+    <input class="buttonRadio"  type="radio" name="RegimenContractual" id="RegimenContractual02" >&nbsp&nbsp<label for="RegimenContractual02">Transitorio</label><br>
+  </div>
+  <div class="form-control">
+    Nivel<br>
+    <input type="number" name="nivel" placeholder="00">
+  </div>
+  <div class="form-control">
+    Conforme a la nueva estructura,<br> ¿A cuál subdirección perteneces?
+    <input type="text" name="subdireccionActual" id="subdireccionActual" >
+  </div>
+  <div class="form-control">
+    Funciones en el puesto actual:<br>
+    <textarea name="message" id="funcionActual" rows="5" placeholder="(Dar enter para poder cambiar de renglón)" ></textarea>
+  </div>
+  <div class="form-control">
+    Correo electrónico
+    <input type="email" name="emailActual" placeholder="(****@pemex.com)">
+  </div>
+  <div class="form-control">
+    Extención
+    <input type="tel" name="extTelActual" placeholder="ej. 881-214-56">
+  </div>
+  <div class="form-control">
+    Telefono Celular
+    <input type="tel" name="celular" placeholder="XXX-123-45-67">
+  </div>
+
+ <!-- +++++++++++++++++++++++++ terminan reactivos +++++++++++++++++++++++++++  -->
+    
+      <!--
+      <div class="form-control">
+        <button class="btn  form-control">guardar</button></a>
+      </div>
+      -->
+        
+      <div class="form-control">
+        <a href="javascript:history.back(-1);" class="bton">anterior</a>
+      </div>
+      <div class="form-control">
+        <a href="./formatoA04.html" class="bton">siguiente</a>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>

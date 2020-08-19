@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>PC01</title>
+
+  <!-- BOOSTRAP CORE CSS -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+  <!-- data tables  css  -->
+  <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/rowReorder.dataTables.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/responsive.dataTables.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+
+  <!--<script type="text/javascript" src="toruskit/js/toruskit.min.js"></script>-->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+  <script type="text/javascript" src="js/botonArriba.js"></script>
+
+  <!-- seccin de graficos-->
+  <script type="text/javascript" src="js/Chart.min.js"></script>
+
+  <!-- data table section -->
+  <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="js/dataTables.rowReorder.min.js"></script>
+  <script type="text/javascript" src="js/dataTables.responsive.min.js"></script>
+  <script type="text/javascript" src="js/triggerDataTable.js"></script>
+
+
+</head>
+
+<body>
+  <div class="topping">
+    <div class="crumbs">
+      <ul>
+        <li>
+          <a href="">
+            <p>Plan de Carrera</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <p>Directorio Profesionistas</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <p>Disciplina</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <p>Especialidad</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <p>Empleado</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <img src="images/LogoPemexColorH.png" alt="LogoPemex" />
+  </div>
+  <span class="ir-arriba"><img src="images/icoBtnUp.png"></span>
+
+  <div class="d-flex  bg-white" id="wrapper">
+    <!-- SIDEBAR -->
+    <div id="sidebar-wrapper">
+      <div class="sidebar-heading">
+        <div class="aydi">
+          <div><img src="./images/sinnombre.png" class="photoID" alt="FotoPerfilusuario" /></div>
+          <div>
+            <p>F: 378901</p>
+            <p>Ing. Petrolero</p>
+          </div>
+        </div>
+        <h6>Juan Ramirez Izquierdo</h6>
+
+      </div>
+      <!-- menu -->
+      <div id="MainMenu">
+        <div class="list-group panel" style="border: 0;">
+          <a href="#SeccionDisciplinas" class="list-group-item list-group-item-light" data-toggle="collapse"
+            data-parent="#MainMenu">Disciplinas<i class="fa fa-caret-down"></i></a>
+          <div class="collapse" id="SeccionDisciplinas">
+            <a href="#SubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Disciplina 1<i
+                class="fa fa-caret-down"></i></a>
+            <div class="collapse list-group-submenu" id="SubMenu1">
+              <a href="#" class="list-group-item" data-parent="#SubMenu1">Disciplina 1 a</a>
+              <a href="#" class="list-group-item" data-parent="#SubMenu1">Disciplina 1 b</a>
+              <a href="#SubSubMenu1" class="list-group-item" data-toggle="collapse"
+                data-parent="#SubSubMenu1">Disciplina 1 c<i class="fa fa-caret-down"></i></a>
+              <div class="collapse list-group-submenu list-group-submenu-1" id="SubSubMenu1">
+                <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub Disciplina 1 c A</a>
+                <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub Disciplina 1 c B</a>
+              </div>
+              <a href="#" class="list-group-item" data-parent="#SubMenu1">Disciplina 1 d</a>
+            </div>
+            <a href="javascript:;" class="list-group-item">Disciplina 2</a>
+            <a href="javascript:;" class="list-group-item">Disciplina 3</a>
+          </div>
+
+          <a href="#demo4" class="list-group-item list-group-item-light" data-toggle="collapse"
+            data-parent="#MainMenu">Especialidades<i class="fa fa-caret-down"></i></a>
+          <div class="collapse" id="demo4">
+            <a href="" class="list-group-item">Especialidades 1</a>
+            <a href="" class="list-group-item">Especialidades 2</a>
+            <a href="" class="list-group-item">Especialidades 3</a>
+          </div>
+          <a href="#" class="list-group-item list-group-item-light" data-parent="#MainMenu">Estados</a>
+          <a href="#" class="list-group-item list-group-item-light" data-parent="#MainMenu">Columnas visibles</a>
+        </div>
+
+      </div>
+    </div>
+    <!-- /#SIDEBAR-WRAPPER -->
+
+    <!-- CONTENIDO DE LA PAGINA -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+        <div class="row align-items-center">
+          <button class="btn btn-primary btn-sm" id="menu-toggle">Menu</button>
+          <div id="textTitle" class="text-wrap col">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem earum sequi cum nostrum neque
+              fugiat?</p>
+          </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-toggle="tooltip" title="Salir de Sistema">
+                <img src="images/ImgOnOff.png">
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-toggle="tooltip" title="Home">
+                <img src="images/ImgHome.png">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-toggle="tooltip" title="imprimir">
+                <img src="images/ImgPrint.png">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-toggle="tooltip" title="Cerrar ventana">
+                <img src="images/ImgCloseWindow.png">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-toggle="tooltip" title="Regresar Página">
+                <img src="images/ImgBack.png">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+              aria-selected="true">Tablas</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+              aria-selected="false">Gráficos</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <table id="example" class="display nowrap" style="width:100%">
+              <thead>
+                <tr>
+                  <th>Competencias</th>
+                  <th>NDR</th>
+                  <th>Fecha<br>Evaluación</th>
+                  <th>GrE</th>
+                  <th>NDR</th>
+                  <th>NDE</th>
+                  <th>BF Camp</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Bombeo de hidrocarburos líquidos</td>
+                  <td>EX</td>
+                  <td>(en blanco)</td>
+                  <td>N</td>
+                  <td>0</td>
+                  <td>S</td>
+                  <td>-5.000</td>
+                </tr>
+                <tr>
+                  <td>Bombeo hidráulico</td>
+                  <td>EX</td>
+                  <td>(en blanco)</td>
+                  <td>N</td>
+                  <td>0</td>
+                  <td>S</td>
+                  <td>-5.000</td>
+                </tr>
+                <tr>
+                  <td>Calidad de gas y condensado</td>
+                  <td>EX</td>
+                  <td>(en blanco)</td>
+                  <td>N</td>
+                  <td>0</td>
+                  <td>S</td>
+                  <td>-5.000</td>
+                </tr>
+                <tr>
+                  <td>Calidad roca almacén</td>
+                  <td>EX</td>
+                  <td>(en blanco)</td>
+                  <td>N</td>
+                  <td>0</td>
+                  <td>S</td>
+                  <td>-5.000</td>
+                </tr>
+                <tr>
+                  <td>Caracterización de yacimientos de lutitas orgánicas ricas en materia orgánica</td>
+                  <td>EX</td>
+                  <td>(en blanco)</td>
+                  <td>N</td>
+                  <td>0</td>
+                  <td>S</td>
+                  <td>-5.000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+            <canvas id="marksChart" width="300" height="200"></canvas>
+            <script>
+              var marksCanvas = document.getElementById("marksChart");
+              var marksData = {
+                labels: ["c195", "c180", "c24", "c431", "c333", "c211", "c61", "c4", "c190", "c207", "c78", "c110",
+                  "c220", "c14", "c115", "c167", "c177", "c180", "c193", "c220", "c211", "c202"
+                ],
+                datasets: [{
+                  label: "NDR",
+                  backgroundColor: "rgba(200,0,0,0.2)",
+                  data: [65, 75, 70, 80, 60, 80, 68, 78, 88, 80, 40, 35, 20, 90, 92, 88, 80, 40, 95, 70, 90, 92]
+                }, {
+                  label: "NDE",
+                  backgroundColor: "rgba(86, 37, 42, 0.2)",
+                  data: [54, 65, 60, 70, 70, 75, 54, 63, 67, 75, 80, 54, 63, 67, 75, 67, 75, 80, 54, 63, 67, 75]
+                }]
+              };
+
+              var radarChart = new Chart(marksCanvas, {
+                type: 'radar',
+                data: marksData
+              });
+            </script>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /#PAGINA-CONTENIDO-WRAPPER -->
+  </div>
+  <!-- /#WRAPPER -->
+
+  <!-- JS DE NUCLEO -->
+  <!--<script src="jquery/jquery.min.js"></script>-->
+
+
+  <!-- Torus Kit primero, luego jQuery, Despues Popper.js, al Ultimo Bootstrap JS -->
+
+
+  <!-- SCRIPT DE MENU OCULTO -->
+  <script>
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+
+    //****** SCRIPT DE TOOLTIP OVER ******** //
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+
+</body>
+
+</html>

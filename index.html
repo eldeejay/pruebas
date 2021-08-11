@@ -1,64 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>Prototipos de Diseños</title>
-    <style>
-      * {
-        font-family: sans-serif;
-        margin: 0;
-      }
-      #particles-js {
-        background: url(images/drilliling02.jpg);
-        background-position: center;
-        background-attachment: contain;
-        background-size: cover;
-        height: 100vh;
-      }
-      #mytitle {
-        padding-top: 13%;
-        position: absolute;
-        width: 100%;
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
-        text-align: center;
-      }
+	<link rel="stylesheet" href="css/fotoGaleria.css" />
+    <link rel="stylesheet" href="css/glightbox.min.css" />
+	<link rel="stylesheet" href="css/glightbox-config.css" />
+	<link rel="stylesheet" href="css/stilosparticula.css" />
+    <script>
+      $(document).ready(function(){
 
-      #mytitle h1 {
-        font-size: 2.4rem;
-        font-weight: bolder;
-        padding-bottom: 10px;
-        color: antiquewhite;
-      }
-      #mytitle h3 {
-        font-size: 1.4rem;
-        font-weight: bold;
-        padding-bottom: 10px;
-        color: antiquewhite;
-      }
-      #mytitle a {
-        text-decoration: none;
-      }
-      #mytitle h3:hover {
-        color: #fff;
-        font-size: 1.6rem;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="mytitle">
-      <h1>Bienvenidos a la Sección de Diseños</h1>
-      <a href="360/index.html" target="_blank"><h3>Ir al Sitio 360</h3></a>
-      <a href="PC/index.html" target="_blank"><h3>Ir al Sitio PC</h3></a>
-    </div>
-    <!-- particles.js container -->
-    <div id="particles-js"></div>
-  </body>
-  <!--    particulas   -->
-  <script src="js/particles.js"></script>
+        $('li').click(function(){
+          $(this).addClass('active').siblings().removeClass('active');
+        });
+
+      });
+	  
+	</script>
+	
+
+    <script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', function () {
+			const cuerpo = document.getElementById('cuerpo');  
+			const menuTrigger = document.getElementById('menuTrigger');
+			const menuLateral = document.getElementById('menuLateral');
+			var menuLinks = menuLateral.getElementsByTagName('li');
+			
+			menuTrigger.addEventListener('click', function () {
+				menuLateral.classList.toggle('ul_show');
+				cuerpo.classList.toggle('slide_image');
+				
+			  });
+			});
+  
+  
+			/*
+			for(var j = 0; j < menuLinks.length; j++) {
+			  
+			  menuLinks[j].onclick = function(){
+				document.write(menuLinks[1].innerHTML);
+				  // remove class from sibling
+				  var mLink = menuLinks[0];
+				  while(mLink){
+					  if(mLink.tagName === "li"){
+						  //remove class
+						  mLink.classList.remove("active");
+					  }
+					  // pass to the new sibling
+					  mLink = mLink.nextSibling;
+				  }
+				  this.classList.add("active");  
+			  };
+		};
+  */
+	  </script>
+
+
+
+
+
+	<title>The Old DeeJay</title>
+</head>
+<body id="cuerpo">
+
+	<i  id="menuTrigger"></i>
+    <ul id="menuLateral">
+		<li class="active"><a href="#portada">Inicio</a></li>
+		<li><a href="#web">Diseño Web</a></li>
+		<li><a href="#foto">Fotografía</a></li>
+		<li><a href="#video">Video</Video></a></li>
+		<li><a href="">Diseños</a></li>
+		<li><a href="#footer">Contacto</a></li>
+	</ul>
+  
+
+  
+	  	<section id="portada">
+			<div class="banner" id="inicio">
+				<div id="banner__titular">The Old Dee Jay</div>
+				<div class="nubes">
+					<img src="images/cloud1.png" alt="nube1" style="--i:1;">
+					<img src="images/cloud2.png" alt="nube2" style="--i:2;">
+					<img src="images/cloud3.png" alt="nube3" style="--i:3;">
+					<img src="images/cloud4.png" alt="nube4" style="--i:4;">
+					<img src="images/cloud5.png" alt="nube5" style="--i:5;">
+					<img src="images/cloud1.png" alt="nube1" style="--i:10;">
+					<img src="images/cloud2.png" alt="nube2" style="--i:9;">
+					<img src="images/cloud3.png" alt="nube3" style="--i:8;">
+					<img src="images/cloud4.png" alt="nube4" style="--i:7;">
+					<img src="images/cloud5.png" alt="nube5" style="--i:6;">
+				</div>
+			  </div>
+		  </section>
+
+
+		<section id="web">
+			<div id="mytitle">
+				<h1>Bienvenidos a la Sección de Diseños</h1>
+				<a href="360/index.html" target="_blank"><h3>Ir al Sitio 360</h3></a>
+				<a href="PC/index.html" target="_blank"><h3>Ir al Sitio PC</h3></a>
+			  </div>
+			  <!-- particles.js container -->
+			  <div id="particles-js"></div>
+		</section>
+
+		
+		<section id="foto">
+			<div class="grid-container" id="fotos"></div>
+			
+			<script type="text/javascript">
+				/* Aqui creamos random de miniatura de foto: si va alargada, alta, o normal*/
+				let tiposSpandax = ["", "", "tall", "", "", "wide"];
+				/* numero de fotos en carpeta*/
+				let n = 78;
+				/* El Div "fotos" es cagado con variable "galeria"*/
+				let fotogaleria = document.getElementById("fotos");
+				/* Aqui deplegamos fotos*/
+				for (let i = 1; i <= n; i++) {
+				  let j = Math.floor(Math.random() * (5 - 0 + 1)) + 1;
+				  normalWideTall = tiposSpandax[j];
+				  fotogaleria.innerHTML +=
+					'<a href="sesiones/img' +
+					i +
+					'.jpg" class="glightbox ' +
+					normalWideTall +
+					'"><img src="sesiones/rz/img' +
+					i +
+					'.jpg" alt="image" />';
+				}
+			  </script>
+		  
+			  <script src="js/glightbox.min.js"></script>
+			  <script>
+				const nav = document.createElement("div");
+				nav.classList.add("gcounter");
+				nav.dataset.indicator = "/";
+		  
+				const slides = GLightbox({
+				  onOpen: () => slides.modal.appendChild(nav),
+				  afterSlideChange: function (prev, next) {
+					nav.dataset.indicator = `${next.index + 1} / ${
+					  slides.elements.length
+					}`;
+					nav.classList.add("gcounter-added");
+				  },
+				});
+			  </script>
+
+		</section>
+		<section id="video">
+			<div class="embedvideo"><iframe width="560" height="315" src="https://www.youtube.com/embed/iBtPlTcrGl8?rel=0&showinfo=0" 
+				title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+				encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="embedvideo"><iframe width="560" height="315" src="https://www.youtube.com/embed/9b1RNMc1wnU?rel=0&showinfo=0" title="" 
+				frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+				picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div>
+	
+		</div>
+
+		</section>
+		<section id="audio"></section>
+		<footer id="footer">
+			<div class="izquierda">
+				<h2>Sobre "The Old DeeJay"</h2><br>
+					<!--	
+				  <p>The Old Dee Jay es un concepto que busca preservar y fomentar la diversidad musical.<br> <em>- La Musica es Cultura -</em></p>
+						-->
+					<p>En "The Old Dee Jay" creamos contenido para tu sitio web, redes sociales, canal  de video o el medio que necesites.</p>
+					<a href="https://facebook.com/coding.np"><span class="fab fa-facebook-f"></span></a>
+					<a href="#"><span class="fab fa-twitter"></span></a>
+					<a href="https://instagram.com/coding.np"><span class="fab fa-instagram"></span></a>
+					<a href="https://youtube.com/c/codingnepal"><span class="fab fa-youtube"></span></a>
+
+
+			</div>
+			<div class="central">
+				<h2>Dejenos su comentario</h2><br>
+				<form action="#" id="formulario-contacto">
+					  <input type="email" required placeholder="Email *">
+					  <textarea rows="2" cols="25" required placeholder="Comentarios *"></textarea>
+					  <button type="submit">Enviar</button>
+				  </form>
+			</div>
+			<div>
+				<h2>Dirección</h2><br>
+					<span class="fas fa-map-marker-alt"></span>
+					<span class="text">&nbsp;&nbsp;	Villahermosa, Tabasco. México.</span><br>
+					<span class="fas fa-envelope"></span>
+					<span class="text">&nbsp;&nbsp;theolddeejay@yahoo.com</span>
+			</div>
+		</footer>
+	
+</body>
+<script src="js/particles.js"></script>
   <script src="js/stats.js"></script>
   <script src="js/app.js"></script>
 </html>
